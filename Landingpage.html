@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You</title>
+    <title>Thank You for Watching</title>
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #f4f4f4;
         }
 
         .email-container {
@@ -24,11 +24,10 @@
             text-align: center;
         }
 
-        .header, .footer {
+        .header {
             background-color: #E40046;
             color: white;
             padding: 20px;
-            text-align: center;
         }
 
         .header img {
@@ -47,31 +46,46 @@
             font-size: 24px;
         }
 
+        .content h2 {
+            color: #333333;
+            font-size: 20px;
+        }
+
         .content p {
             font-size: 16px;
             line-height: 1.5;
         }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+        }
     </style>
-    <script>
-        // JavaScript to refresh the page after 1 second
-        setTimeout(function(){
-            location.reload();
-        }, 1000); // 1000 milliseconds = 1 second
-    </script>
 </head>
 
 <body>
     <div class="email-container">
         <div class="header">
-            <img src="your-logo-url-here.png" alt="Company Logo">
-            <h2>Company Name</h2>
+            <img src="company-logo.png" alt="Company Logo">
+            <h1>Thank You for Watching Our Demo</h1>
         </div>
         <div class="content">
-            <h1>Thank You!</h1>
-            <p>Thank you for watching our demo. We appreciate your time and interest in our product.</p>
+            <p>We appreciate your interest in our services. Please let us know if you have any questions or need further assistance.</p>
+            
+            <!-- Form to send POST request -->
+            <form action="https://example.com/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
         <div class="footer">
-            <p>&copy; 2024. All rights reserved.</p>
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
         </div>
     </div>
 </body>
