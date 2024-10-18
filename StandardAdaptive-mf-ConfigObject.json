@@ -126,7 +126,7 @@
         "mf-bool-showFacebookButton": false,
         "mf-bool-showGithubButton": false,
         "mf-bool-showGoogleButton": true,
-        "mf-bool-blurDOBandID": true,
+        "mf-bool-blurDOBandID": false,
         "mf-string-daysUntilProgressiveProfile": 30
     },
     "p1Credentials": {
