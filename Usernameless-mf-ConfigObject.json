@@ -51,7 +51,7 @@
         "mf-str-captchaV3SecretKey": "6LfdK6QpAAAAAMsuy-7ezPCyLIAAQoP8eDBoSclF",
         "mf-str-captchaV3SiteKey": "6LfdK6QpAAAAALcGPNmzzyK4Baigr2UWjnL57ZIr",
         "mf-str-companyLogo": "https://github.com/curtismu7/CDN/blob/main/davinci-logo.jpg?raw=true",
-        "mf-str-companyName": "Davinci Demo - Adaptive Authentication",
+        "mf-str-companyName": "Davinci Demo - Usernameless Authentication",
         "mf-str-facebookExternalIdPId": "",
         "mf-str-githubExternalIdPId": "",
         "mf-str-googleExternalIdPId": "",
