@@ -3,7 +3,6 @@
         "mf-bool-webauthnBrowserSupport": true,
         "mf-obj-p1MFAPasswordlessAllowedTypes": [
             "FIDO2",
-        
             "MOBILE",
             "TOTP"
         
