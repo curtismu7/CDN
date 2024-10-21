@@ -1,13 +1,6 @@
 {
     "config": {
         "mf-bool-webauthnBrowserSupport": true,
-        "mf-obj-p1MFAPasswordlessAllowedTypes": [
-            "FIDO2",
-            "PLATFORM",
-            "MOBILE",
-            "TOTP",
-            "SECURITY_KEY"
-        ],
         "mf-obj-passwordPolicy": {
             "length": {
                 "max": 255,
@@ -111,7 +104,7 @@
         "mf-bool-allowreCaptcha": false,
         "mf-bool-displayProfileUpdateQuestion": true,
         "mf-bool-runAgreement": true,
-        "mf-bool-runUsernameless": false, 
+        "mf-bool-runUsernameless": false,
         "mf-bool-runReturnToLogin": false,
         "mf-bool-runGoogleLogin": true,
         "mf-bool-runMFAOnAccountUnlock": true,
@@ -131,6 +124,5 @@
     },
     "p1Credentials": {
         "mf-bool-runCredentials": false
-       
     }
 }
