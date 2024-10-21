@@ -1,12 +1,7 @@
 {
     "config": {
         "mf-bool-webauthnBrowserSupport": true,
-        "mf-obj-p1MFAPasswordlessAllowedTypes": [
-            "FIDO2",
-            "MOBILE",
-            "TOTP"
-        
-        ],
+
         "mf-obj-passwordPolicy": {
             "length": {
                 "max": 255,
@@ -91,7 +86,7 @@
         "mf-bool-showProgressScreenDisplay": true,
         "mf-bool-userDeleteOnTempEmail": false,
         "mf-bool-userLockedOnTempEmail": true,
-        "mf-str-fakeRiskLevel": "High",
+        "mf-str-fakeRiskLevel": "HIGH",
         "mf-str-fakeRiskScore": 80
     },
     "p1Verify": {
@@ -114,10 +109,12 @@
         "mf-bool-runFacebookLogin": true,
         "mf-bool-runGithubLogin": true,
         "mf-bool-runGoogleLogin": true,
+      
+        "mf-bool-runUsernameless": false,
         "mf-bool-runMFAOnAccountUnlock": true,
         "mf-bool-runPasswordExpireCheck": true,
         "mf-bool-runProgressiveProfileAuthN": true,
-        "mf-bool-runProgressiveProfileRegstration": true,
+        "mf-bool-runProgressiveProfileRegstration": false,
         "mf-bool-runReturnToLogin": false,
         "mf-bool-runTimeBasedProgressiveProfile": true,
         "mf-bool-sendEmailPasswordChange": true,
