@@ -1,0 +1,228 @@
+
+  :root {
+    /********************************************************
+    * COMPANY LOGO
+    *********************************************************/
+    --company-logo-img-url: url("https://avatars.githubusercontent.com/u/93611276?v=4");
+    --company-logo-max-height: 95px;
+
+    /********************************************************
+    * PAGE BACKGROUND 
+    *********************************************************/
+    --background-image-url: url("");
+
+    /********************************************************
+    * CARD BODY
+    *********************************************************/
+    --card-background-color: rgb(242, 221, 184);
+    --card-shadow-color: rgba(146, 55, 25, .35);
+
+    /********************************************************
+    * BODY
+    *********************************************************/
+    --body-font-family: Helvetica;
+    --body-font-size: .8rem;
+
+    /********************************************************
+    * TEXT FONT COLORS
+    *********************************************************/
+
+    /*  PRIMARY FONT COLOR (RGB) */
+    --text-color-primary: 181, 119, 87;
+
+    /* HEADING FONT COLR (RBG) */
+    --heading-text-color: 61, 69, 77;
+    
+    /*  MUTED TEXT ALPHA  */
+    --text-color-muted-apha: 0.75;
+
+    /*  ERROR FONT COLOR  */
+    --text-color-error: rgb(185, 35, 32);
+
+    /********************************************************
+    * BUTTON ATTRIBUTES
+    *********************************************************/
+
+    /*  BUTTON FONT COLOR  */
+    --button-primary-text-color: rgb(255, 255, 255);
+
+    /*  BUTTON BACKGROUND COLOR (RGB)  */
+    --button-primary-background-color: 146, 57, 23;
+    
+    /* LINK BUTTON FONT COLOR (RGB)  */
+    --link-button-primary-color: 146, 23, 48;
+
+    /* BUTTON BORDER RADIUS */
+    --button-primary-border-radius: 20px;
+
+    /*  BUTTON HOVER ALPHA  */
+    --button-hover-alpha: 0.70;
+
+    /*  BUTTON ACTIVE ALPHA  */
+    --button-active-alpha: 0.80;
+
+    /*  BUTTON DISABLED ALPHA  */
+    --button-disabled-alpha: 0.65;
+
+    /********************************************************
+     * FORM CONTROLS
+     *********************************************************/
+    --form-control-border-radius: 20px;
+    --card-body-border-radius: 25px;
+    --focus-highlight-color: 105, 242, 121;
+
+    /********************************************************
+    * ACTIVITY INDICATOR & BUTTON SPINNER COLOR
+    *********************************************************/
+
+    --activity-indicator-color: rgb(207, 173, 126);
+
+    --polling-indicator-color: rgb(237, 69, 69);
+
+    /********************************************************
+    * APPLYING TEXT COLOR - DO NOT CHANGE
+    *********************************************************/
+    /* H1,H2, H3, Body text color */
+    --bs-body-color: rgb(var(--text-color-main)) !important;
+    --bs-danger-rgb: var(--text-color-error);
+  }
+
+  
+  
+/********************************************************
+* CLASSES BELOW ARE DERIVED FROM VALUES ABOVE
+* DO NOT CHANGE UNLESS YOU HAVE CSS 'SKILLZ' :)
+*********************************************************/
+
+/*  COMPANY LOGO  */
+.card-body.p-5.d-flex.flex-column > img:first-child,
+.companyLogo {
+  content: var(--company-logo-img-url) !important;
+  height: var(--company-logo-max-height) !important;
+  width: auto !important;
+}
+
+/*  BACKGROUND IMAGE  */
+div.bg-light {
+  background-image:       var(--background-image-url);
+  background-size:        cover;
+  background-repeat:      no-repeat;
+}
+
+/*  HEADING TEXT  */
+h1, h2, h3, h4 {
+  color: rgb(var(--heading-text-color)) !important;
+}
+
+/*  BODY FONT & COLOR  */
+.card-body {
+  /*  font family */
+  font-family: var(--body-font-family) !important;
+  /*  font size */
+  font-size: var(--body-font-size) !important;
+  /*  font color */
+  color: rgb(var(--text-color-primary)) !important;
+  /*  background color */
+  background-color: var(--card-background-color) !important;
+}
+
+/*  MUTED PARAGRAPH  */
+p.text-muted {
+  color: rgba(var(--text-color-primary), var(--text-color-muted-apha)) !important;
+}
+
+/*  ERROR MESSAGE PARAGRAPH  */
+.card .text-danger {
+  color: var(--text-color-error) !important;
+}
+
+/*  FORM CONTROL FONT COLOR  */
+.form-control,
+.form-control:focus {
+  color: var(--text-color-primary) !important;
+  border-radius: var(--form-control-border-radius) !important;
+}
+
+/*  FORM CONTROL PLACEHOLDER FONT COLOR  */
+.form-floating input+label {
+  color: rgba(var(--text-color-primary), var(--text-color-muted-apha)) !important;
+}
+
+/*  FORM CONTROL HIGHLIGHT  */
+.form-control:focus {
+  border-color: rgba(var(--focus-highlight-color), .5) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--focus-highlight-color), 0.25) !important;
+}
+
+/*  PRIMARY BUTTON  */
+.btn-primary {
+  /*  font color  */
+  --bs-btn-color: var(--button-primary-text-color) !important;
+  /*  font color when hovering  */
+  --bs-btn-hover-color: var(--button-primary-text-color) !important;
+  /*  border color  */
+  --bs-btn-border-color: var(--button-primary-background-color) !important;
+  /*  background color  */
+  --bs-btn-bg: rgb(var(--button-primary-background-color)) !important;
+  /*  background color when hovering  */
+  --bs-btn-hover-bg: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;
+  /*  background color when active  */
+  --bs-btn-active-bg: rgba(var(--button-primary-background-color), var(--button-active-alpha)) !important;
+  /*  background color when disabled  */
+  --bs-btn-disabled-bg: rgba(var(--button-primary-background-color), var(--button-disabled-alpha)) !important;
+  background-color: rgb(var(--button-primary-background-color)) !important;
+  border-color: rgb(var(--button-primary-background-color)) !important;
+  color: var(--button-primary-text-color) !important;
+  border-radius: var(--button-primary-border-radius);
+}
+
+
+.btn-primary:hover {
+  background-color: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;
+  border-color: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;
+  color: var(--button-primary-text-color) !important;
+}
+
+/*  LINK BUTTON  */
+.btn-link {
+  /*  button font color  */
+  --bs-btn-color: rgb(var(--link-button-primary-color)) !important;
+  /*  button font color when active  */
+  --bs-btn-active-color: rgba(var(--link-button-primary-color), var(--button-active-alpha)) !important;
+  /*  button font color when hovering  */
+  --bs-btn-hover-color: rgba(var(--link-button-primary-color), var(--button-hover-alpha)) !important;
+  /*  button font color when disabled  */
+  --bs-btn-disabled-color: rgba(var(--link-button-primary-color), var(--button-disabled-alpha)) !important;
+  color: rgb(var(--link-button-primary-color)) !important;
+}
+
+/*  POLLING INDICATORS  */
+.css-11k6vsm,
+.css-17zi2ag,
+.css-139roxj {
+  /* width: 20px; */
+  /* height: 20px; */
+  /* animation-duration: 0.75s; */
+  /*  circle background color  */
+  background-color: var(--polling-indicator-color) !important;
+}
+
+/*  BUTTON ACTIVITY INDICATOR, PROGRESS SPINNER  */
+.css-sw2ho0 {
+  /*  spinning circle color  */
+  --primary-color: var(--activity-indicator-color) !important;
+}
+
+/* PROGRESS SPINNER */
+.spinner-color {
+  color: var(--polling-indicator-color) !important;
+}
+
+.card-body.p-5.d-flex.flex-column {
+  border-radius: var(--card-body-border-radius);
+}
+
+.card.shadow.mb-5 {
+  border-radius: var(--card-body-border-radius);
+  box-shadow: 1px 1px 3px 1px var(--card-shadow-color) !important;
+}
