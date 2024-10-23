@@ -1,12 +1,28 @@
 {
+    "p1Protect": {
+        "mf-str-fakeRiskLevel": "HIGH",
+        "mf-str-fakeRiskScore": 80,
+        "mf-bool-runAfterSocialLogin": false,
+        "mf-bool-runBrowserVersionAuthentication": true,
+        "mf-bool-runBrowserVersionRegistration": true,
+        "mf-bool-runFakeRiskLevel": true,
+        "mf-bool-runMFAOnHigh": false,
+        "mf-bool-runNotificationForNewDevice": true,
+        "mf-bool-runPassiveMode": false,
+        "mf-bool-runProtect": true,
+        "mf-bool-runStopOnHighRiskLevel": false,
+        "mf-bool-showDetailScreenDisplay": false,
+        "mf-bool-showProgressScreenDisplay": true,
+        "mf-bool-userDeleteOnTempEmail": false,
+        "mf-bool-userLockedOnTempEmail": true
+    },
     "config": {
         "mf-bool-webauthnBrowserSupport": true,
-         "mf-obj-p1MFAPasswordlessAllowedTypes": [
+        "mf-obj-p1MFAPasswordlessAllowedTypes": [
             "FIDO2",
             "MOBILE",
-            "TOTP"  
+            "TOTP"
         ],
-
         "mf-obj-passwordPolicy": {
             "length": {
                 "max": 255,
@@ -77,23 +93,6 @@
         "mf-str-fidoOrigin": "https://auth.pingone.com",
         "mf-str-fidoRPID": "pingone.com"
     },
-    "p1Protect": {
-        "mf-bool-runAfterSocialLogin": false,
-        "mf-bool-runBrowserVersionAuthentication": true,
-        "mf-bool-runBrowserVersionRegistration": true,
-        "mf-bool-runFakeRiskLevel": true,
-        "mf-bool-runMFAOnHigh": false,
-        "mf-bool-runNotificationForNewDevice": true,
-        "mf-bool-runPassiveMode": false,
-        "mf-bool-runProtect": true,
-        "mf-bool-runStopOnHighRiskLevel": false,
-        "mf-bool-showDetailScreenDisplay": false,
-        "mf-bool-showProgressScreenDisplay": true,
-        "mf-bool-userDeleteOnTempEmail": false,
-        "mf-bool-userLockedOnTempEmail": true,
-        "mf-str-fakeRiskLevel": "HIGH",
-        "mf-str-fakeRiskScore": 80
-    },
     "p1Verify": {
         "mf-bool-allowVerifyUserRegistration": false,
         "mf-bool-runVerifyFakeSuccess": false,
@@ -114,7 +113,6 @@
         "mf-bool-runFacebookLogin": true,
         "mf-bool-runGithubLogin": true,
         "mf-bool-runGoogleLogin": true,
-      
         "mf-bool-runUsernameless": false,
         "mf-bool-runMFAOnAccountUnlock": true,
         "mf-bool-runPasswordExpireCheck": true,
